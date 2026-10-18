@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday, Harsha thammudu ♡</title>
+<meta name="description" content="A birthday surprise for Harsha thammudu.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-theme="light">
+<audio id="birthday-audio" src="assets/audio.mp3" preload="auto" hidden></audio>
+
+<!-- Shared SVG sprites -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="branch" viewBox="0 0 120 220">
+      <path d="M60 218C58 150 70 90 62 6" fill="none" stroke="currentColor" stroke-width="2.5"/>
+      <path d="M60 190C20 182 8 150 20 128c34 8 44 36 40 62Z"/>
+      <path d="M60 160C98 150 112 122 100 100c-34 8-44 32-40 60Z"/>
+      <path d="M61 120C30 112 22 86 32 68c28 6 34 28 29 52Z"/>
+      <path d="M62 90C92 82 102 58 92 42c-26 4-32 24-30 48Z"/>
+      <path d="M62 50C44 44 40 26 48 14c18 4 20 20 14 36Z"/>
+    </symbol>
+    <symbol id="crown" viewBox="0 0 24 24"><path d="M3 18h18M4 17 3 7l5 4 4-7 4 7 5-4-1 10Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<header class="topbar">
+  <div class="brand"><svg class="ico" aria-hidden="true"><use href="#crown"/></svg><span>For Harsha Thammudu</span></div>
+  <nav aria-label="Progress">
+    <ol id="nav">
+      <li data-for="welcome"><span>Home</span></li>
+      <li data-for="wishes"><span>Wishes</span></li>
+      <li data-for="letter"><span>Letter</span></li>
+      <li data-for="cake,blowing,cutting"><span>Cake</span></li>
+      <li data-for="fireworks"><span>Memories</span></li>
+      <li data-for="finale"><span>Finale</span></li>
+    </ol>
+  </nav>
+</header>
+
+<main id="stage">
+
+  <!-- 1. Welcome -->
+  <section class="scene" id="s-welcome" data-scene="welcome" aria-labelledby="t-welcome">
+    <div class="deco" aria-hidden="true"><svg class="leaf l-a" aria-hidden="true"><use href="#branch"/></svg></div>
+    <div class="deco" aria-hidden="true"><svg class="leaf l-b" aria-hidden="true"><use href="#branch"/></svg></div>
+    <div class="split">
+      <div class="copy">
+        <p class="label">Just for you</p>
+        <h1 id="t-welcome"><span class="sans-h">Welcome!</span><span class="sans-h">Happy Birthday</span><span class="script">Harsha thammudu ♡</span></h1>
+        <p class="lead">To the most amazing thammudu who always brings happiness, energy and positivity into our lives… Wishing you a day as special as you are!</p>
+        <button class="btn" data-action="next">Click to Start <span aria-hidden="true">→</span></button>
+        <p class="note" id="audio-note" role="status" aria-live="polite"></p>
+      </div>
+      <div class="visual">
+        <svg class="gift" viewBox="0 0 260 260" role="img" aria-label="Black gift box with a white ribbon">
+          <ellipse cx="130" cy="244" rx="110" ry="9" fill="#000" opacity=".12"/>
+          <rect x="30" y="100" width="200" height="140" rx="4" fill="#161616"/>
+          <rect x="22" y="78" width="216" height="40" rx="4" fill="#222"/>
+          <rect x="118" y="78" width="24" height="162" fill="#f4f4f1"/>
+          <path d="M130 78C96 30 52 42 66 66c10 16 44 14 64 12ZM130 78c34-48 78-36 64-12-10 16-44 14-64 12Z" fill="#f4f4f1" stroke="#cfcfcb"/>
+          <rect x="120" y="68" width="20" height="18" rx="4" fill="#fff"/>
+          <g transform="rotate(-14 188 196)"><rect x="150" y="170" width="76" height="52" fill="#f1eee7" stroke="#bdbab2"/><circle cx="158" cy="178" r="2.5" fill="#999"/>
+            <text x="188" y="193" text-anchor="middle" font-size="9" letter-spacing="1.5" fill="#555" font-family="Inter,sans-serif">HAPPY</text>
+            <text x="188" y="206" text-anchor="middle" font-size="9" letter-spacing="1.5" fill="#555" font-family="Inter,sans-serif">BIRTHDAY</text></g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Wishes -->
+  <section class="scene" id="s-wishes" data-scene="wishes" aria-labelledby="t-wishes">
+    <div class="deco" aria-hidden="true"><svg class="leaf l-c" aria-hidden="true"><use href="#branch"/></svg></div>
+    <div class="split">
+      <figure class="visual polaroid big">
+        <span class="tape" aria-hidden="true"></span>
+        <img src="assets/main_image.jpg" alt="Harsha thammudu in a rust-brown shirt with the city skyline behind him" width="1600" height="1058">
+        <figcaption class="script">Keep being the amazing person you are! ♡</figcaption>
+      </figure>
+      <div class="copy">
+        <p class="label">Wishes for you</p>
+        <h2 id="t-wishes"><span class="sans-h">Happy Birthday,</span><span class="script">Harsha thammudu! ♡</span></h2>
+        <p class="lead">May your life be filled with happiness, success, good health, and unforgettable memories. Keep smiling, keep believing in yourself, and keep shining!</p>
+        <ul class="wish-list">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9Z"/></svg>More Happiness</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20v-6M12 20V8M19 20V4"/></svg>Greater Success</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg>Good Health</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-4 3-6 7-6s7 2 7 6"/></svg>Always Stay You</li>
+        </ul>
+        <button class="btn" data-action="next">Next <span aria-hidden="true">→</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Letter -->
+  <section class="scene" id="s-letter" data-scene="letter" aria-labelledby="t-letter">
+    <div class="deco" aria-hidden="true"><svg class="leaf l-d" aria-hidden="true"><use href="#branch"/></svg></div>
+    <article class="paper">
+      <h2 id="t-letter" class="script letter-h" style="--n:0">Dear Harsha thammudu,</h2>
+      <div class="letter">
+        <p style="--n:1">Today is not just another day; it is a special day because someone truly special came into this world.</p>
+        <p style="--n:2">You always bring joy, fun, and positive energy into everyone's life. I'm lucky to have a thammudu like you. May this year bring you more happiness, success, new opportunities, and everything you dream of.</p>
+        <p style="--n:3">Keep smiling, stay confident, and never stop being the amazing person you are.</p>
+        <p style="--n:4">Once again, a very Happy Birthday, Harsha thammudu! ♡</p>
+        <p class="sign" style="--n:5">With lots of love,<br>Your anna ♡</p>
+      </div>
+      <svg class="pen" viewBox="0 0 220 24" aria-hidden="true"><path d="M2 12 40 8l170 2c6 0 8 4 0 4L40 16Z" fill="#161616"/><path d="M2 12 20 10v4Z" fill="#888"/><rect x="60" y="9" width="3" height="6" fill="#aaa"/></svg>
+    </article>
+    <button class="btn letter-next" data-action="next">Next <span aria-hidden="true">→</span></button>
+  </section>
+
+  <!-- 4. Cake & music -->
+  <section class="scene" id="s-cake" data-scene="cake" aria-labelledby="t-cake">
+    <div class="split">
+      <div class="copy">
+        <h2 id="t-cake"><span class="sans-h">Make a Wish,</span><span class="script">Harsha thammudu! ♡</span></h2>
+        <p class="lead">Close your eyes, make a wish and let's celebrate with some music!</p>
+        <div class="btn-col">
+          <button class="btn" id="btn-music" data-action="music" aria-pressed="false"><span class="mi" aria-hidden="true">▶</span><span id="music-label">Play Birthday Song</span></button>
+          <button class="btn ghost" data-action="next">Blow the Candles</button>
+        </div>
+      </div>
+      <div class="visual cake-wrap" id="cake-a"></div>
+    </div>
+  </section>
+
+  <!-- 5. Blowing -->
+  <section class="scene dark" id="s-blowing" data-scene="blowing" aria-labelledby="t-blow">
+    <div class="split">
+      <div class="copy">
+        <h2 id="t-blow"><span class="script big-script">Wish made! ♡</span></h2>
+        <p class="lead" id="blow-line">May all your dreams come true, Harsha thammudu!</p>
+      </div>
+      <div class="visual cake-wrap" id="cake-b"><div class="floaters" id="floaters" aria-hidden="true"></div></div>
+    </div>
+  </section>
+
+  <!-- 6. Fireworks -->
+  <section class="scene dark" id="s-fireworks" data-scene="fireworks" aria-labelledby="t-fire">
+    <canvas id="fx" aria-hidden="true"></canvas>
+    <div class="fire-copy">
+      <h2 id="t-fire"><span class="script">Happy Birthday</span><span class="script">Harsha thammudu! ♡</span></h2>
+      <p class="lead">Let the celebrations continue…</p>
+    </div>
+  </section>
+
+  <!-- 7. Cutting -->
+  <section class="scene" id="s-cutting" data-scene="cutting" aria-labelledby="t-cut">
+    <div class="deco" aria-hidden="true"><svg class="leaf l-c" aria-hidden="true"><use href="#branch"/></svg></div>
+    <div class="cut-copy">
+      <h2 id="t-cut"><span class="sans-h">Cake Cut! ♡</span></h2>
+      <p class="lead">A sweet slice for a special person…</p>
+    </div>
+    <div class="cut-wrap" id="cake-c"></div>
+  </section>
+
+  <!-- 8. Finale -->
+  <section class="scene" id="s-finale" data-scene="finale" aria-labelledby="t-final">
+    <div class="deco" aria-hidden="true"><svg class="leaf l-a" aria-hidden="true"><use href="#branch"/></svg></div>
+    <div class="deco" aria-hidden="true"><svg class="leaf l-b" aria-hidden="true"><use href="#branch"/></svg></div>
+    <div class="confetti" id="confetti" aria-hidden="true"></div>
+    <div class="finale">
+      <p class="script once">Once Again…</p>
+      <h2 id="t-final"><span class="sans-h">Happy Birthday</span><span class="script">Harsha thammudu! ♡</span></h2>
+      <p class="lead">Keep Smiling. Stay Happy Always.<br>Have an Amazing Year Ahead!</p>
+      <div class="collage">
+        <figure class="polaroid" style="--r:-5deg"><img src="assets/img1.jpg" alt="Harsha thammudu waiting on a metro platform" width="600" height="1300"><figcaption class="script">Always Be You ♡</figcaption></figure>
+        <figure class="polaroid" style="--r:2deg"><img src="assets/img2.jpg" alt="Harsha thammudu leaning on a tree by a quiet street" width="600" height="1300"><figcaption class="script">Good Times</figcaption></figure>
+        <figure class="polaroid" style="--r:5deg"><img src="assets/img3.jpg" alt="Harsha thammudu standing by a railing in front of a fort" width="607" height="1300"><figcaption class="script">Shine Always ♡</figcaption></figure>
+      </div>
+      <p class="script brothers">Brothers Forever</p>
+      <button class="btn" data-action="replay">Replay Birthday Surprise <span aria-hidden="true">↻</span></button>
+    </div>
+  </section>
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>
